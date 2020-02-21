@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: org.fpt.automation.features.search.SearchByKeywordStory
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 4.706 s <<< FAILURE! - in org.fpt.automation.features.search.SearchByKeywordStory
+searching_by_keyword_banana_should_display_the_corresponding_article(org.fpt.automation.features.search.SearchByKeywordStory)  Time elapsed: 1.093 s  <<< ERROR!
+net.thucydides.core.webdriver.DriverConfigurationError: 
+Could not instantiate new WebDriver instance of type class org.openqa.selenium.firefox.FirefoxDriver (Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LPP00173386B', ip: '192.168.0.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: driver.version: ProvideNewDriver). See below for more details.
+	at org.fpt.automation.features.search.SearchByKeywordStory.searching_by_keyword_banana_should_display_the_corresponding_article(SearchByKeywordStory.java:35)
+
+searching_by_keyword_apple_should_display_the_corresponding_article(org.fpt.automation.features.search.SearchByKeywordStory)  Time elapsed: 0.388 s  <<< ERROR!
+net.thucydides.core.webdriver.DriverConfigurationError: 
+Could not instantiate new WebDriver instance of type class org.openqa.selenium.firefox.FirefoxDriver (Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LPP00173386B', ip: '192.168.0.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: driver.version: ProvideNewDriver). See below for more details.
+	at org.fpt.automation.features.search.SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article(SearchByKeywordStory.java:27)
+

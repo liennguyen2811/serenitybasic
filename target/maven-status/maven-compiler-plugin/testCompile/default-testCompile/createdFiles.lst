@@ -1,0 +1,4 @@
+org\fpt\automation\features\search\SearchByKeywordStory.class
+org\fpt\automation\pages\DictionaryPage.class
+org\fpt\automation\features\search\package-info.class
+org\fpt\automation\steps\serenity\EndUserSteps.class
