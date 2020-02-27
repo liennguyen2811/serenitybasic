@@ -12,7 +12,7 @@ public class LogInSteps {
         onLogInPage.inputEmail("liennguyen2811@gmail.com");
         onLogInPage.clickNextButton();
         try {
-            Thread.sleep(9000);
+            Thread.sleep(9009);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
