@@ -19,10 +19,8 @@ public class Account {
     public Account(String fullName, String email, String phone, String password) {
         this.fullName = fullName;
         this.email = String.format("%s_%s", email, RandomStringUtils.randomAlphabetic(20));
+        this.password = password;
+        this.phone = phone;
     }
 
-    public static void main(String[] args) {
-        String email = "";
-        System.out.println(String.format("%s_%s", email, RandomStringUtils.randomAlphabetic(20)));
-    }
 }

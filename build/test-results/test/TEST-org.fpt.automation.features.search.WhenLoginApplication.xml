@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.fpt.automation.features.search.WhenLoginApplication" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-27T09:58:20" hostname="LPP00173386B" time="0.275">
+<testsuite name="org.fpt.automation.features.search.WhenLoginApplication" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-28T08:25:23" hostname="LPP00173386B" time="0.34">
   <properties/>
-  <testcase name="loginApplication2" classname="org.fpt.automation.features.search.WhenLoginApplication" time="0.275"/>
-  <system-out><![CDATA[Tiáº¿p theo
+  <testcase name="getName" classname="org.fpt.automation.features.search.WhenLoginApplication" time="0.34"/>
+  <system-out><![CDATA[lien nguyen
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation

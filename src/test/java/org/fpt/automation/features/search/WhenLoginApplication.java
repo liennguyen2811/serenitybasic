@@ -25,5 +25,15 @@ public class WhenLoginApplication {
         startWeb.launchApplication();
         loginGoogleAPI.logIn();
     }
+    @Test
+    public void getName(){
+        startWeb.getNameAccount();
+    }
+
+//    @Test
+//    public void lien(){
+//        String text = "Tiếp theo";
+//    }
+
 }
 
