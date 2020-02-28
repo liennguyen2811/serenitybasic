@@ -2,6 +2,7 @@ package org.fpt.automation.pages;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.util.EnvironmentVariables;
+import org.fpt.automation.feature.properties.MyProperties;
 
 public class LoginPage extends PageObject {
 
@@ -14,15 +15,19 @@ public class LoginPage extends PageObject {
     private EnvironmentVariables environments;
 
     public String getEmailFromConfigFile(){
-        System.out.println("if com here 1" );
-        String usename =  environments.getProperty("liennguyen2811@gmail.com");
-        System.out.println("if com here 2   " + usename);
+        System.out.println("name   " + MyProperties.NAME);
+        //String usename =  environments.getProperty("dev.name");
+        String usename =  environments.getProperty(MyProperties.NAME);
         return usename;
     }
     public String getPasswordFromConfigFile(){
-        String password =  environments.getProperty("liennguyen2811@gmail.com");
+        String password =  environments.getProperty(MyProperties.PASSWORD);
         return password;
     }
+//    public String getEmailFromConfigFileOtional(){
+//        String usename =  environments.optionalProperty("dev.username");
+//        return usename;
+//    }
 
     public  void inputEmail(String emailAdresss){
         element(Target.of(EMAIL)).type(emailAdresss);
