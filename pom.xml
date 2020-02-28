@@ -82,6 +82,7 @@
                         <include>**/When*.java</include>
                         <include>**/*Story.java</include>
                     </includes>
+                    <encoding>UTF-8</encoding>
                     <argLine>-Xmx512m</argLine>
                 </configuration>
                 <executions>

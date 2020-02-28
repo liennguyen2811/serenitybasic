@@ -1,6 +1,7 @@
 package org.fpt.automation.pages;
 
 import net.serenitybdd.core.pages.PageObject;
+import net.thucydides.core.util.EnvironmentVariables;
 
 public class LoginPage extends PageObject {
 
@@ -10,6 +11,18 @@ public class LoginPage extends PageObject {
     public static final String PASSWORD ="password";
     public static final String EMAIL ="email";
 
+    private EnvironmentVariables environments;
+
+    public String getEmailFromConfigFile(){
+        System.out.println("if com here 1" );
+        String usename =  environments.getProperty("liennguyen2811@gmail.com");
+        System.out.println("if com here 2   " + usename);
+        return usename;
+    }
+    public String getPasswordFromConfigFile(){
+        String password =  environments.getProperty("liennguyen2811@gmail.com");
+        return password;
+    }
 
     public  void inputEmail(String emailAdresss){
         element(Target.of(EMAIL)).type(emailAdresss);
@@ -41,8 +54,8 @@ public class LoginPage extends PageObject {
         }
 
         public String getText() {
-//            String isEnglish = "VIE";//Langue.isEnglish
-            String isEnglish = System.getProperty("LANG"); // WHen run them -DLANG=VIE
+           String isEnglish ="VIE";
+//            String isEnglish = System.getProperty("LANG"); // WHen run them -DLANG=VIE
             System.out.println(isEnglish);
             if (isEnglish.equals("VIE")) {
                 return String.valueOf(vietnamese);

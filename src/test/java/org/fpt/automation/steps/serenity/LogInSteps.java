@@ -9,14 +9,15 @@ public class LogInSteps {
 
     @Step
     public void logIn(){
-        onLogInPage.inputEmail("liennguyen2811@gmail.com");
+        onLogInPage.inputEmail(onLogInPage.getEmailFromConfigFile());
+      //  onLogInPage.inputEmail("liennguyen2811@gmail.com");
         onLogInPage.clickNextButton();
         try {
             Thread.sleep(9009);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        onLogInPage.inputPassword("jjj");
+        onLogInPage.inputPassword(onLogInPage.getEmailFromConfigFile());
         onLogInPage.clickNextButton();
 
     }
