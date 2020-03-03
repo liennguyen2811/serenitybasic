@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.fpt.automation.seleniumeasy.features.login.WhenTypeTextAndDate" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-03-03T09:23:37" hostname="LPP00173386B" time="35.371">
+  <properties/>
+  <testcase name="typeDate" classname="org.fpt.automation.seleniumeasy.features.login.WhenTypeTextAndDate" time="16.834"/>
+  <testcase name="typeText" classname="org.fpt.automation.seleniumeasy.features.login.WhenTypeTextAndDate" time="17.437"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 03, 2020 4:23:37 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 48985
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1583227419.434][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
+Mar 03, 2020 4:23:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 03, 2020 4:23:55 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 44975
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1583227436.783][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
+Mar 03, 2020 4:23:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
