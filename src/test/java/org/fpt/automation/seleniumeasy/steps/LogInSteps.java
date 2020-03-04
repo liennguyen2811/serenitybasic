@@ -1,11 +1,11 @@
 package org.fpt.automation.seleniumeasy.steps;
 
 import net.thucydides.core.annotations.Step;
-import org.fpt.automation.seleniumeasy.pages.LoginPage;
+import org.fpt.automation.seleniumeasy.pages.LogInPage;
 
 public class LogInSteps {
 
-    LoginPage onLogInPage;
+    LogInPage onLogInPage;
 
     @Step
     public void logIn(){
