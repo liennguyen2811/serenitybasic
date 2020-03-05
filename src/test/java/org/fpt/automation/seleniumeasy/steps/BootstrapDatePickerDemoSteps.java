@@ -7,8 +7,8 @@ public class BootstrapDatePickerDemoSteps {
     BootstrapDatePickerDemoPage bootstrapDatePickerDemoPage;
 
     @Step
-    public void enterDate(){
-        bootstrapDatePickerDemoPage.enterDateExample("03-03-2020");
-        bootstrapDatePickerDemoPage.enterDateRangeExample("04-04-2020");
+    public void enterDate(String form, String to){
+        bootstrapDatePickerDemoPage.enterDateToDateTimePickerExample(form);
+        bootstrapDatePickerDemoPage.enterDateToDateTimePickerRangeExample(to);
     }
 }

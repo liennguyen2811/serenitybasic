@@ -29,7 +29,7 @@ public class WhenTypeTextAndDate {
         homeSteps.launchApplication();
         homeSteps.goToInputForm();
         homeSteps.goToSimpleFormDemo();
-        simpleFormDemoSteps.typeText();
+        simpleFormDemoSteps.typeTextToSimpleForm("lien");
     }
     @Test
     public void typeDate(){
@@ -38,6 +38,6 @@ public class WhenTypeTextAndDate {
         homeSteps.goToSimpleFormDemo();
         homeSteps.goDatePicker();
         homeSteps.goBootstrapDatePicker();
-        bootstrapDatePickerDemoSteps.enterDate();
+        bootstrapDatePickerDemoSteps.enterDate("02-02-2020","03-03-2020");
     }
 }

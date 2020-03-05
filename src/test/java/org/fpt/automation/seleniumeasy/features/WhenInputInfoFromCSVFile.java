@@ -1,8 +1,9 @@
-package org.fpt.automation.seleniumeasy.features.login;
+package org.fpt.automation.seleniumeasy.features;
 
-import net.serenitybdd.junit.runners.SerenityRunner;
+import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
+import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.fpt.automation.seleniumeasy.steps.BootstrapDatePickerDemoSteps;
 import org.fpt.automation.seleniumeasy.steps.HomeSteps;
 import org.fpt.automation.seleniumeasy.steps.SimpleFormDemoSteps;
@@ -10,8 +11,19 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-@RunWith(SerenityRunner.class)
-public class WhenTypeTextAndDate {
+@UseTestDataFrom("testdata/lession27.csv")
+@RunWith(SerenityParameterizedRunner.class)
+public class WhenInputInfoFromCSVFile {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private String name;
+
     @Managed
     WebDriver webdriver;
 
@@ -29,15 +41,6 @@ public class WhenTypeTextAndDate {
         homeSteps.launchApplication();
         homeSteps.goToInputForm();
         homeSteps.goToSimpleFormDemo();
-        simpleFormDemoSteps.typeText();
-    }
-    @Test
-    public void typeDate(){
-        homeSteps.launchApplication();
-        homeSteps.goToInputForm();
-        homeSteps.goToSimpleFormDemo();
-        homeSteps.goDatePicker();
-        homeSteps.goBootstrapDatePicker();
-        bootstrapDatePickerDemoSteps.enterDate();
+        simpleFormDemoSteps.typeTextToSimpleFormCSVFile(name);
     }
 }

@@ -1,4 +1,4 @@
-package org.fpt.automation.seleniumeasy.modles;
+package org.fpt.automation.seleniumeasy.models;
 
 import org.apache.commons.lang3.RandomStringUtils;
 

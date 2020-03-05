@@ -1,7 +1,7 @@
 package org.fpt.automation.seleniumeasy.pages;
 
 import net.serenitybdd.core.pages.PageObject;
-import org.fpt.automation.seleniumeasy.modles.Account;
+import org.fpt.automation.seleniumeasy.models.Account;
 
 
 public class HomePage extends PageObject {

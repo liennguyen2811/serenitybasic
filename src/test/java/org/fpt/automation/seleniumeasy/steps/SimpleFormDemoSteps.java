@@ -8,7 +8,10 @@ public class SimpleFormDemoSteps {
     SimpleFormDemoPage simpleFormDemoPage;
 
     @Step
-    public void typeText(){
-        simpleFormDemoPage.enterTextTo("Lien Nguyen");
+    public void typeTextToSimpleForm(String name){
+        simpleFormDemoPage.enterTextToSimpleForm(name);
+    }
+    public void typeTextToSimpleFormCSVFile(String name){
+        simpleFormDemoPage.enterTextToSimpleFormCSVFile(name);
     }
 }
