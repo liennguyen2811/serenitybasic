@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
 @WithTags({
+        @WithTag ("parallel"),
         @WithTag ("class"),
         @WithTag ("paralle")
 })

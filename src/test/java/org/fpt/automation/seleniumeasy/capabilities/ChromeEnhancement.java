@@ -16,7 +16,7 @@ public class ChromeEnhancement implements BeforeAWebdriverScenario {
                                      TestOutcome testOutcome,
                                      DesiredCapabilities capabilities) {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("----headless");
+        options.addArguments("--headless");
         options.addArguments("--window-size=600,600");
         options.addArguments("--window-position=300,300");
 
