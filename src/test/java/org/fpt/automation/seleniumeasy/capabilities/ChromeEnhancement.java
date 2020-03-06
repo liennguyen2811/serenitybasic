@@ -15,5 +15,4 @@ public class ChromeEnhancement implements BeforeAWebdriverScenario {
         capabilities.setCapability(ChromeOptions.CAPABILITY,options);
         return  capabilities;
     }
-
 }
