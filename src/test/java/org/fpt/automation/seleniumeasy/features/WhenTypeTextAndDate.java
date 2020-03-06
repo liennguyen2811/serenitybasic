@@ -4,6 +4,7 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.WithTag;
+import net.thucydides.core.annotations.WithTags;
 import org.fpt.automation.seleniumeasy.steps.BootstrapDatePickerDemoSteps;
 import org.fpt.automation.seleniumeasy.steps.HomeSteps;
 import org.fpt.automation.seleniumeasy.steps.SimpleFormDemoSteps;
@@ -12,7 +13,10 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
-@WithTag("Round1")
+@WithTags({
+        @WithTag ("class"),
+        @WithTag ("paralle")
+})
 public class WhenTypeTextAndDate {
     @Managed
     WebDriver webdriver;
@@ -25,7 +29,7 @@ public class WhenTypeTextAndDate {
 
     @Steps
     BootstrapDatePickerDemoSteps bootstrapDatePickerDemoSteps;
-
+    @WithTag("method")
     @Test
     public void typeText(){
         homeSteps.launchApplication();
