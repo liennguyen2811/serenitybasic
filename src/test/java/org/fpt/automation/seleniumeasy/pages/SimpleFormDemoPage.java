@@ -1,10 +1,10 @@
 package org.fpt.automation.seleniumeasy.pages;
 
-import net.serenitybdd.core.pages.PageObject;
+import org.fpt.automation.MyPageObject;
 
 import static org.fpt.automation.seleniumeasy.models.Common.target;
 
-public class SimpleFormDemoPage extends PageObject {
+public class SimpleFormDemoPage extends MyPageObject {
     public static final String ENTER_TEXT_TARGET = "//label[text()='%s']/following-sibling::input[@type='text']";
 
     public void enterTextToSimpleForm(String textToType){

@@ -1,11 +1,11 @@
 package org.fpt.automation.seleniumeasy.pages;
 
-import net.serenitybdd.core.pages.PageObject;
+import org.fpt.automation.MyPageObject;
 
 import static org.fpt.automation.seleniumeasy.models.Common.target;
 
 
-public class BootstrapDatePickerDemoPage extends PageObject {
+public class BootstrapDatePickerDemoPage extends MyPageObject {
     public static final String ENTER_DATE_TARGET = "//div[text()='%s']/parent::div//input";
 
 

@@ -84,8 +84,6 @@
                     </includes>
                     <encoding>UTF-8</encoding>
                     <argLine>-Xmx512m</argLine>
-                    <parallel>classes</parallel>
-                    <threadCount>2</threadCount>
                 </configuration>
                 <executions>
                     <execution>

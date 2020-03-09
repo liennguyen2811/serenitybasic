@@ -1,10 +1,10 @@
 package org.fpt.automation.seleniumeasy.pages;
 
-import net.serenitybdd.core.pages.PageObject;
+import org.fpt.automation.MyPageObject;
 import org.fpt.automation.seleniumeasy.models.Account;
 
 
-public class HomePage extends PageObject {
+public class HomePage extends MyPageObject {
     public static final String INPUT_FORM_BUTTON = "//li[@class='dropdown']/a[contains(text(),'Input Forms')]";
     public static final String SIMPLE_FORM_DEMO_BUTTON = "//ul[@class='dropdown-menu']//a[contains(text(),'Simple Form Demo')]";
     public static final String DATE_PICKER_BUTTON = "//a[text()='Date pickers']";
