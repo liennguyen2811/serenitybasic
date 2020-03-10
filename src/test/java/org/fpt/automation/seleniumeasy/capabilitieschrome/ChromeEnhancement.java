@@ -1,4 +1,4 @@
-package org.fpt.automation.seleniumeasy.capabilities;
+package org.fpt.automation.seleniumeasy.capabilitieschrome;
 
 import net.serenitybdd.core.webdriver.enhancers.BeforeAWebdriverScenario;
 import net.thucydides.core.model.TestOutcome;
