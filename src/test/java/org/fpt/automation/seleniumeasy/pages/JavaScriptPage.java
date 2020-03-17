@@ -23,10 +23,13 @@ public class JavaScriptPage extends MyPageObject {
     public void sendKey_Prompt_Box(String textToSend, String buttonName){
         element(JAVASCRIPT_PROMPT_BOX).waitUntilPresent();
         element(JAVASCRIPT_PROMPT_BOX).click();
-        sleepInSecond(2);
+        sleepInSecond(10);
         getAlert().sendKeys(textToSend);
         if(buttonName.equals("Cancel")){
+            sleepInSecond(5);
             getAlert().dismiss();}
-        else getAlert().accept();
+        else {
+            sleepInSecond(5);
+            getAlert().accept();}
     }
 }

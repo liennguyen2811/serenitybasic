@@ -23,6 +23,7 @@ public class ChromeEnhancement implements BeforeAWebdriverScenario {
 
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
         capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
+        capabilities.setCapability(CapabilityType.UNHANDLED_PROMPT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
         capabilities.setCapability("name", testOutcome.getStoryTitle() + " - " + testOutcome.getTitle());
 
         return capabilities;
