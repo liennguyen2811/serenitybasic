@@ -135,4 +135,11 @@ public class MyPageObject extends PageObject {
             exp.printStackTrace();
         }
     }
+    public void sleepInSecond(long numberInSecond) {
+        try {
+            Thread.sleep(numberInSecond * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
