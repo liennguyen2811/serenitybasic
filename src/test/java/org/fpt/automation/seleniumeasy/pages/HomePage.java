@@ -11,6 +11,9 @@ public class HomePage extends MyPageObject {
     public static final String BOOTRAP_DATE_PICKER_BUTTON = "//a[text()='Date pickers']/preceding-sibling::i/following-sibling::ul//a[text()='Bootstrap Date Picker']";
     public static final String ALERTS_MODALS= "//a[text()='Alerts & Modals']";
     public static final String JAVASCRIPT_ALERTS = "//a[text()='Alerts & Modals']/parent::li//a[text()='Javascript Alerts']";
+    public static final String WELCOME_TEXT = "//h2[text()='Welcome to ']";
+    public static final String SEARCH_TEXTBOX = "//input[@title='Enter the terms you wish to search for.']";
+    public static final String HOME_BUTTON = "//a[text()='Selenium Easy']";
     Account account = new Account("lien nguyen","liennguyen2811","009","jjj");
 
     public void getFullNameAccount() {
@@ -37,5 +40,15 @@ public class HomePage extends MyPageObject {
         element(ALERTS_MODALS).click();
         element(JAVASCRIPT_ALERTS).waitUntilPresent();
         element(JAVASCRIPT_ALERTS).click();
+    }
+    public void goHome(){
+        sleepInSecond(4);
+        element(HOME_BUTTON).waitUntilPresent();
+        element(HOME_BUTTON).click();
+    }
+    public void cutTextFromSearch(){
+        cutTextFrom(element(SEARCH_TEXTBOX),"Lien Nguyen");
+        sleepInSecond(10);
+        pasteTextInto(element(SEARCH_TEXTBOX));
     }
 }

@@ -31,9 +31,14 @@ public class HomeSteps {
     public void getNameAccount(){
         onHomePage.getFullNameAccount();
     }
-
     @Step
     public void goToJavaScriptAlertsModals(){
         onHomePage.goAlertsModals();
     }
+    @Step
+    public void cutPastTextFromSearch(){
+        onHomePage.goHome();
+        onHomePage.cutTextFromSearch();
+    }
+
 }
