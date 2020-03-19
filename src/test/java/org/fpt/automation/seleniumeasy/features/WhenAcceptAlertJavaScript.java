@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
+
 @RunWith(SerenityRunner.class)
 @WithTag("javascript")
 public class WhenAcceptAlertJavaScript {

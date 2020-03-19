@@ -34,9 +34,9 @@ public class WhenTypeTextAndDate {
     @Test
     public void typeText(){
         homeSteps.launchApplication();
-//        homeSteps.goToInputForm();
-//        homeSteps.goToSimpleFormDemo();
-//        simpleFormDemoSteps.typeTextToSimpleForm("lien");
+        homeSteps.goToInputForm();
+        homeSteps.goToSimpleFormDemo();
+        simpleFormDemoSteps.typeTextToSimpleForm("3");
     }
     @Test
     public void typeDate(){
